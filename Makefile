@@ -9,3 +9,9 @@ play:
 
 publish:
 	npm publish --dry-run
+
+lint:
+	eslint src/**/*.{js,jsx,ts,tsx}
+
+fix:
+	eslint src/**/*.{js,jsx,ts,tsx} --fix
