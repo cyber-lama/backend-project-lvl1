@@ -8,7 +8,8 @@
     "brain-games": "bin/brain-games.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eslinter": "eslint src/**/*.{js,jsx,ts,tsx}",
+    "eslinter-fix": "eslint src/**/*.{js,jsx,ts,tsx} --fix"
   },
   "repository": {
     "type": "git",

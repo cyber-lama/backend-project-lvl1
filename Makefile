@@ -11,7 +11,7 @@ publish:
 	npm publish --dry-run
 
 lint:
-	eslint src/**/*.{js,jsx,ts,tsx}
+	npm run eslinter
 
 fix:
-	eslint src/**/*.{js,jsx,ts,tsx} --fix
+	npm run eslinter-fix
