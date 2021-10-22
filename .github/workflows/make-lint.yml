@@ -6,7 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: echo start lint
-        run: echo "make lint!"
-      - name: start lint
+      # Check-out repository under GitHub workspace
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v2
+      - name: Run linter
         run: make lint
