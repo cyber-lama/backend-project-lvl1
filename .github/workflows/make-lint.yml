@@ -11,5 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: echo start lint
+        run: echo "Hello World!"
       - name: Before push make lint
         run: make lint
