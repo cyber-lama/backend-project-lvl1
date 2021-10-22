@@ -6,17 +6,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Check-out repository under GitHub workspace
-      # https://github.com/actions/checkout
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        name: 'setup node'
+      - uses: actions/setup-node@v2
         with:
-          node-version: '13.x'
-      - name: Install modules
+          node-version: 15.9.0
+      - name: Install dependencies
         run: make install
-      - name: Run linter
+      - name: Run Lint
         with:
-          path: ./node_modules/.bin/eslint
-          run: make lint
+          path: |
+            node_modules
+        run: make lint
 
