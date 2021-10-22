@@ -1,17 +1,12 @@
 name: make lint
 
-on:
-  push:
-    branches:
-      - '**'
-    tags:
-      - '**'
+on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: echo start lint
-        run: echo "Hello World!"
-      - name: Before push make lint
+        run: echo "make lint!"
+      - name: start lint
         run: make lint
