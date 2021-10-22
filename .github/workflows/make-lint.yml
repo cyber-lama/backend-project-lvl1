@@ -9,7 +9,6 @@ jobs:
       # Check-out repository under GitHub workspace
       # https://github.com/actions/checkout
       - uses: actions/checkout@v2
+      - uses: eslint-config-airbnb/eslint-action@1.0.2
       - name: Run linter
         run: make lint
-        with:
-          coverageLocations: ${{github.workplace}}/node_modules/
