@@ -24,8 +24,5 @@ jobs:
         run: make install
       - name: Lint js files
         run: make lint
-        with:
-          path: |
-            node_modules
 
 
