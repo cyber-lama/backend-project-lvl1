@@ -17,15 +17,15 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: 15.9.0
       - name: Install dependencies
         run: make install
       - name: Lint js files
+        run: make lint
         with:
           path: |
             node_modules
-        run: make lint
+
 
