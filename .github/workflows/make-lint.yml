@@ -1,0 +1,15 @@
+name: make lint
+
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - '**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Before push make lint
+        run: make lint
