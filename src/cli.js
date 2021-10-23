@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
+import {showLog} from "./helpers/helper.js";
 
 const greetUser = () => {
-  readlineSync.question('Welcome to the Brain Games!');
+  showLog('Welcome to the Brain Games!')
   const name = readlineSync.question('May I have your name? ');
-  readlineSync.question(`Hello, ${name}!`);
+  showLog(`Hello, ${name}!`)
   return name;
 };
 export default greetUser;
