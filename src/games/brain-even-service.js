@@ -3,7 +3,7 @@ import {
   checkEven, generateRandNum, greetUser, showLog,
 } from '../helpers/helper.js';
 
-function playParityCheckGame() {
+export default function() {
   let count = 0;
   let userName;
 
@@ -33,4 +33,3 @@ function playParityCheckGame() {
   };
   runGame();
 }
-export default playParityCheckGame;

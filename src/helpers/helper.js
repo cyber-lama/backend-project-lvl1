@@ -15,4 +15,9 @@ export const greetUser = () => {
 
 export const generateRandNum = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
+export const generateRandOperator = () => {
+  const operators = ["-", "+", "*"]
+  return operators[generateRandNum(1,3)]
+}
+
 export const checkEven = (n) => !(n % 2);
