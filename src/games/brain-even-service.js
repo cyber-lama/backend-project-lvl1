@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import {checkEven, generateRandNum, greetUser, showLog} from "../helpers/helper.js";
-
-
+import {
+  checkEven, generateRandNum, greetUser, showLog,
+} from '../helpers/helper.js';
 
 function playParityCheckGame() {
   let count = 0;
@@ -11,7 +11,7 @@ function playParityCheckGame() {
     do {
       if (count === 0) { // если это первый цикл
         userName = greetUser(); // устанавливаем имя
-        showLog('Answer "yes" if the number is even, otherwise answer "no".')
+        showLog('Answer "yes" if the number is even, otherwise answer "no".');
       }
       count += 1;
 
