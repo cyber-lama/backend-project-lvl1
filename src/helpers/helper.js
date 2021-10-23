@@ -16,9 +16,9 @@ export const greetUser = () => {
 export const generateRandNum = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
 export const generateRandOperator = () => {
-  const operators = ["-", "+", "*"]
-  return operators[generateRandNum(0,2)]
-}
+  const operators = ['-', '+', '*'];
+  return operators[generateRandNum(0, 2)];
+};
 
 export const checkEven = (n) => !(n % 2);
 
@@ -38,7 +38,6 @@ export const runGame = (logic) => {
     }
     if (count === 3) return showLog(`Congratulations, ${userName}!`);
     showLog('Correct!');
-
   } while (count < 3);
   return null;
-}
+};
