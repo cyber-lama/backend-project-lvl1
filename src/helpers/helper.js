@@ -36,8 +36,7 @@ export const runGame = (logic) => {
     if (result !== answer) {
       return showLog(`${answer} is wrong answer ;(. Correct answer was ${result}.`);
     }
-    if (count === 3) return showLog(`Congratulations, ${userName}!`);
     showLog('Correct!');
   } while (count < 3);
-  return null;
+  return showLog(`Congratulations, ${userName}!`);
 };
